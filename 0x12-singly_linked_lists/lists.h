@@ -1,9 +1,5 @@
-fndef _LISTS_
-#define _LISTS_
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#ifndef LISTS_H
+#define LISTS_H
 
 /**
  *  * struct list_s - singly linked list
@@ -12,7 +8,7 @@ fndef _LISTS_
  *     * @next: points to the next node
  *      *
  *       * Description: singly linked list node structure
- *        * for ALX project
+ *        * for Holberton project
  *         */
 typedef struct list_s
 {
@@ -28,3 +24,4 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
 #endif
+
